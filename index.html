@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Id Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-4"></div>
+        <div class="col-md-4" style="background: #00BCD4;color:white;margin-top: 20px;">
+                <h1 style="text-align: center">Instant Id Generator</h1>
+                <h4>Generate password , id & tokens instantly</h4>
+                <label for="">Enter Length of Id</label>
+                <input id="length-input" type="number" min="1" max="50" value="8" placeholder="Enter length  1-50" class="form-control" required>
+                <p style="margin-top:20px; margin-bottom: 0px; font-weight: bold;">What should id includes? <p>
+                 <input class="radio_type" type="radio" name="case" value="numbers" checked> Numbers Only <br>
+                 <input class="radio_type" type="radio" name="case" value="numbers_alphabates"> Numbers & Alphabates Only <br>
+                 <input class="radio_type" type="radio" name="case" value="numbers_alphabates_special"> Numbers & Alphabates & Special Charachters<br>
+                 <button id="id_generator_button" class="btn btn-primary">Generate Id</button>
+                 <input id="output" readonly>
+                 <button id="copy_button" class="btn btn-primary">Copy</button>
+        </div>
+    </div>
+    <p id='copy-msg'> Copied to Clipboard </p>
+    <script src="id_generator.js"></script>
+</body>
+</html>
